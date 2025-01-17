@@ -7,12 +7,14 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
+    "format": "prettier --write .",
     "preview": "vite preview",
     "prepare": "husky"
   },
   "lint-staged": {
-    "*.{js,css,md,vue,json,ts,tsx,jsx}": "prettier --write",
-    "*.js": "eslint --cache --fix"
+    "**/*": [
+      "eslint"
+    ]
   },
   "dependencies": {
     "react": "^18.3.1",

@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client';
 import './index.css';
 import App from './App.tsx';
 
-let a = 0;
+const a = 0,
+  b = 0;
 
 createRoot(document.getElementById('root')!).render(<App />);

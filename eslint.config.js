@@ -40,7 +40,12 @@ export default tseslint.config(
       'no-unused-vars': 'off', // Superseded by @typescript-eslint/no-unused-vars
       '@typescript-eslint/no-unused-vars': 'warn',
       'prefer-const': 'warn', // Downgrade from error to warning
-      'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
+      'react-refresh/only-export-components': [
+        'warn',
+        {
+          allowConstantExport: true,
+        },
+      ],
     },
   }
 );
