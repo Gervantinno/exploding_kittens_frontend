@@ -31,7 +31,7 @@ const GamePage = () => {
           </div>
         </div>
       ) : (
-        <div>sosal</div>
+        <div>:(((((((((</div>
       )}
     </div>
   );
