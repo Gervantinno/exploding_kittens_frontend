@@ -35,7 +35,7 @@ const GamePage = () => {
           </div>
         </div>
       ) : (
-        <div>:((((((((</div>
+        <div>:(((((((</div>
       )}
     </div>
   );
