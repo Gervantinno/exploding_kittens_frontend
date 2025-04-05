@@ -7,12 +7,16 @@ const GamePage = () => {
   const [gameState, setGameState] = useState<IGameState>();
 
   useEffect(() => {
-    connectToGame('meow', (state) => setGameState(state));
+    connectToGame({ gameId: '', newPlayer: { id: '', name: 'meow', cards: [] } }, (state) =>
+      setGameState(state)
+    );
 
     return () => {
-      unsubscribeGame();
+      unsubscribeGame({ gameId: '', newPlayer: { id: '', name: 'meow', cards: [] } });
     };
   }, []);
+
+  console.log(gameState);
 
   return (
     <div>
