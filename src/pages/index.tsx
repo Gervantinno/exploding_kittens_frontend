@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router';
 import { routesArray, IRoute } from './routesArray';
 import ErrorBoundary from './ErrorBoundary/ErrorBoundary';
+import RequireAuth from './RequireAuth/RequireAuth';
 
 const Routing = () => {
   return (
@@ -8,7 +9,7 @@ const Routing = () => {
       {routesArray.map((route: IRoute) => {
         // Очень важен порядок в котором мы будем оборачивать компонент
 
-        const element = <ErrorBoundary>{route.element}</ErrorBoundary>;
+        let element = <ErrorBoundary>{route.element}</ErrorBoundary>;
 
         // element = (
         //   <NavigationLayout
@@ -29,7 +30,7 @@ const Routing = () => {
         //   //   );
         //   // }
 
-        //   element = <RequireAuth>{element}</RequireAuth>;
+        element = <RequireAuth to={route.path}>{element}</RequireAuth>;
         // } else if (route.requireUnauth) {
         //   element = <RequireUnauth>{element}</RequireUnauth>;
         // }

@@ -1,6 +1,14 @@
-// socket.ts
-import { io } from 'socket.io-client';
+import { io, Socket } from 'socket.io-client';
 
-const socket = io('http://localhost:3000');
+export let socket: Socket | undefined;
 
-export default socket;
+export const initSocket = (token: string): Socket => {
+  socket = io('http://localhost:3000', {
+    auth: { token },
+    autoConnect: false, // Мы подключим вручную после установки токена
+  });
+
+  return socket;
+};
+
+export const getSocket = (): Socket | null => socket;
