@@ -1,0 +1,59 @@
+.page_wrapper {
+  min-height: calc(100vh - 64px);
+  display: flex;
+  flex-direction: column;
+
+  .exit_button {
+    width: fit-content;
+  }
+}
+
+.card_image {
+  width: 150px;
+}
+
+.modal_content {
+  padding: 32px;
+  border-radius: 8px;
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+
+  > h3 {
+    color: white;
+  }
+}
+
+.img_wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  justify-content: space-evenly;
+  margin-top: 16px;
+  align-items: baseline;
+
+  .icon {
+    width: 70px;
+    cursor: pointer;
+    margin-inline: 18px;
+  }
+
+  .card_image {
+    width: 150px;
+  }
+}
+.player_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.player_name {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+}

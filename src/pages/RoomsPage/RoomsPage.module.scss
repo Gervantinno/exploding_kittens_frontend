@@ -1,0 +1,35 @@
+.page_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+
+  .header_wrapper {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-left: auto;
+    color: white;
+  }
+
+  .title_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .rooms_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    .room_wrapper {
+      display: flex;
+      justify-content: space-between;
+      padding: 12px 18px;
+      background-color: white;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  }
+}

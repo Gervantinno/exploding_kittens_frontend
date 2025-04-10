@@ -1,0 +1,32 @@
+.cards_wrapper {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  overflow-x: auto;
+}
+
+.image_large {
+  width: 220px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.card_action_wrapper {
+  display: flex;
+  gap: 12px;
+
+  > * {
+    flex-grow: 1;
+  }
+}
+
+.combo_action_wrapper {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 12px;
+}
